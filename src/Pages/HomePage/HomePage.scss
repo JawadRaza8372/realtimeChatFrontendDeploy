@@ -1,0 +1,89 @@
+@import "../../Colors.scss";
+.homepage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .joinContainer {
+    height: 70%;
+    width: 90%;
+    max-height: 300px;
+    max-width: 600px;
+    border: 2px solid $fontthirdColor;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    .formcontainer {
+      width: 100%;
+      height: calc(100% - 4rem);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      input {
+        &::placeholder {
+          color: $fontthirdColor;
+        }
+        height: 3rem !important;
+        width: 90%;
+        margin: 10px auto;
+        padding: 0 10px;
+        font-size: 1rem;
+        background: transparent;
+        outline: none;
+        border: 2px solid $fontfirstColor;
+        color: $fontthirdColor;
+        border-radius: 10px;
+        letter-spacing: 2px;
+      }
+      .submibutton {
+        margin: 10px auto;
+        background: transparent;
+        border: 2px solid $fontfirstColor;
+        color: $fontfirstColor;
+        border-radius: 10px;
+        font-size: 1rem;
+        padding: 10px 15px;
+        letter-spacing: 3px;
+        text-transform: capitalize;
+        text-decoration: none;
+        &:hover {
+          background: linear-gradient(45deg, $fontfirstColor, $fontsecondColor);
+          color: $fontthirdColor;
+          font-weight: bold;
+        }
+      }
+    }
+    .header {
+      height: 4rem;
+      width: 100%;
+      background: $fontthirdColor;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      h1 {
+        border: none;
+        height: 100%;
+        width: 100%;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: $fontfirstColor;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          color: $fontsecondColor;
+        }
+      }
+    }
+  }
+}

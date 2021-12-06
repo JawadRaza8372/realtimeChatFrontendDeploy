@@ -1,0 +1,99 @@
+@import "../../Colors.scss";
+.chatpage {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  .chatContainer {
+    height: 100%;
+    width: 100%;
+    .chatHeader {
+      height: 4rem;
+      width: 100%;
+      background: $fontthirdColor;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      a {
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        color: $fontfirstColor;
+        border: none;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+
+        span {
+          color: $fontsecondColor;
+          text-decoration: none;
+        }
+      }
+    }
+    .chatContent {
+      height: calc(100vh - 8rem);
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding: 15px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .chatFooter {
+      height: 4rem;
+      width: 100%;
+      background: $fontthirdColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      input {
+        background: transparent;
+        height: 100%;
+        border: none;
+        outline: none;
+        width: 100%;
+        font-size: 1.3rem;
+        padding: 0 10px;
+        color: $fontfirstColor;
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+      .sendbutton {
+        background: transparent;
+        height: 100%;
+        width: 4rem;
+        border: none;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+        #icon {
+          font-size: 2.5rem;
+          color: $fontfirstColor;
+          margin: 0 auto;
+          transition: all 0.3s ease-in-out;
+          transition-delay: 0.2s;
+        }
+        &:hover {
+          background: $fontfirstColor;
+          #icon {
+            color: $fontthirdColor;
+            transform: translateX(10px);
+          }
+        }
+      }
+    }
+  }
+}
+.buttonc {
+  background-image: url(../../asset/arrow.png) !important;
+  background-size: contain;
+  width: 40px !important;
+  height: 40px !important;
+  border: 2px solid white !important;
+}

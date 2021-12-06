@@ -1,0 +1,31 @@
+@import "../../Colors.scss";
+@mixin message($back, $float) {
+  background: $back;
+  color: white !important;
+  padding: 10px 15px;
+  border-radius: 6px;
+  float: $float;
+  margin-bottom: 10px;
+  width: 60%;
+}
+.leftdiv {
+  @include message($fontfirstColor, left);
+  .message {
+    width: 100%;
+  }
+}
+.rightdiv {
+  @include message($fontsecondColor, right);
+
+  .message {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .leftdiv {
+    width: 95%;
+  }
+  .rightdiv {
+    width: 95%;
+  }
+}

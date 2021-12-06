@@ -1,0 +1,25 @@
+.notificatiionMsg {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  color: lightgrey;
+  overflow: hidden;
+  margin: 10px 0;
+  span {
+    width: 100%;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .notificatiionMsg {
+    width: 100%;
+    span {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}

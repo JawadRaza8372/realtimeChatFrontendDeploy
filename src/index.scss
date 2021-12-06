@@ -1,0 +1,9 @@
+@import "./Colors.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(45deg, $seconColor, $firstColor);
+}
